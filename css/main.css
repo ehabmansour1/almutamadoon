@@ -797,4 +797,38 @@ padding: 70px 0;
   gap: 30px;
   padding: 50px 10px;
 }
+.service-landing {
+  padding: 80px 0;
+}
+
+.service-landing .container {
+  display: block;
+}
+.service-landing li {
+  color: var(--main-color);
+  margin: 10px 0;
+}
+.service-landing h2 {
+  margin-bottom: 25px;
+}
+.service-landing p {
+  margin-bottom: 25px;
+}
+
 /* end services  */
+.certificate-landing {
+background-image: url(../images/about1.jpg);
+}
+.certificate {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  text-align: center;
+  padding: 25px ;
+
+}
+.certificate img {
+  width: 400px;
+  margin: auto;
+}
