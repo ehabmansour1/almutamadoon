@@ -745,3 +745,56 @@ footer .container li img {
   margin-bottom: 20px;
 }
 /* end about landing  */
+/* start services  */
+.services-landing {
+  background-image: url(../images/logo-green.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.services-boxes {
+background-color:  #fdfdfd ;
+padding: 70px 0;
+}
+.services-boxes h1 {
+  color: var(--back-color);
+  text-align: center;
+  font-size: 2.5rem;
+}
+.services-boxes p {
+  text-align: center;
+  color: rgba(0,0,0,0.54);
+  font-size: 1.5rem;
+}
+.services-boxes .box {
+  font-size: 1.6rem;
+  color: var(--main-color);
+  height: 200px;
+  background-image: url(../images/services1.jpg);
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px ;
+  position: relative;
+  z-index: 1;
+
+}
+.services-boxes .box::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0 ;
+  background-color: #033f38b9;
+  z-index: -1;
+}
+.services-boxes .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap: 30px;
+  padding: 50px 10px;
+}
+/* end services  */
