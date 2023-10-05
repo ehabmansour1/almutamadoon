@@ -4,6 +4,7 @@
   --secondary-color: #f7e6b4;
   --back-color: #14594b;
   --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --text-color:#444648;
 }
 /* end variables */
 /* dark mode  */
@@ -471,6 +472,7 @@ footer .container li img {
 /* end footer  */
 /* start icons */
 .whatsapp-icon {
+  z-index: 50;
   position: fixed;
   width: 50px;
   height: 50px;
@@ -633,3 +635,113 @@ footer .container li img {
   margin-bottom: 5px;
 }
 /* end quality  */
+/* start about landing  */
+.about-landing {
+  padding: 40px 0;
+  min-height: 500px;
+  background-image: url(../images/who-are-we.jpg);
+  position: relative;
+  z-index: 1;
+}
+.about-landing::after  {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #14594bea;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.about-landing  .container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+.about-landing  .container > * {
+  flex: 1;
+}
+.about-landing  .container h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 2rem;
+}
+.about-landing  .container p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.about-section {
+  padding: 30px 0;
+
+}
+.about-section .container{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-section .container  > div {
+  flex: 1;
+}
+.about-section .container h2 {
+  color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.about-section .container p {
+  color: #777777;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+.dark-back {
+  background-color: #f5f6f7;
+}
+.about-section h3{
+  color: var(--back-color);
+  font-size: 2.1rem;
+  max-width: 700px;
+  line-height: 2;
+  text-align: center;
+  margin:20px auto;
+  padding: 10px;
+}
+@media (max-width:767px) {
+  .about-section .container {
+    flex-direction: column;
+  } 
+  .dark-back .container{
+    flex-direction: column-reverse;
+  }.about-landing .container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-landing .container > * {
+    flex: initial;
+  }
+} 
+.message {
+  padding: 80px 0;
+  text-align: center;
+  background-image: url(../images/message.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  color: var(--secondary-color);
+}.message::after {
+  position: absolute;
+  content: "";
+  background-color: #14594bc4;
+  inset: 0 0 0 0;
+  z-index: -1;
+}
+.message h2 {
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+}
+/* end about landing  */
